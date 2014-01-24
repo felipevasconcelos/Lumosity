@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#64d6ff">
+
+    <ImageView
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px" />
+
+    <ImageView
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:id="@+id/answer"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Is the previous image equal to this one?"
+        android:id="@+id/textView"
+        android:textColor="#111"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginBottom="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="60px" />
+
+    <Button android:id="@+id/no"
+        style="?metaButtonBarButtonStyle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="@string/no"
+        android:layout_marginRight="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="280dp" />
+
+    <Button android:id="@+id/yes"
+        style="?metaButtonBarButtonStyle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="@string/yes"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="60dp" />
+
+</RelativeLayout>

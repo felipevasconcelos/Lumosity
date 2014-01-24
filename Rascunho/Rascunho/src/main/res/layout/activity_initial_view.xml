@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.rascunho.InitialView">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="right|top">
+
+        <RelativeLayout android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="355dp"
+            android:background="@color/black_overlay"
+            tools:ignore="UselessParent"
+            android:layout_gravity="center"
+            android:gravity="fill"
+            android:visibility="visible">
+
+            <Button android:id="@+id/game_play_1"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:text="@string/game_play_1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:onClick="game1"/>
+
+            <Button android:id="@+id/game_play_2"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:text="@string/game_play_2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:onClick="game2"/>
+
+            <Button android:id="@+id/game_play_3"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:text="@string/game_play_3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:onClick="game3"/>
+
+            <Button android:id="@+id/game_play_4"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:text="@string/game_play_4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:onClick="game4"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

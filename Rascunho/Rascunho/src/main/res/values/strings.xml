@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rascunho</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="game_play_1">Gameplay 1</string>
+    <string name="game_play_2">Gameplay 2</string>
+    <string name="game_play_3">Gameplay 3</string>
+    <string name="game_play_4">Gameplay 4</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+</resources>
